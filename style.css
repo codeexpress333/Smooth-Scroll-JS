@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    background: #f3f3f3;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c0c0c;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    margin: 0 50px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background: #222;
+    padding: 10px 20px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 4.5rem;
+}
+
+section#home {
+    background: url('./assets/img1.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+section#about {
+    background: url('./assets/img2.png');
+    color: #fff;
+}
+
+section#team {
+    background: url('./assets/img3.png');
+    color: #fff;
+}
+
+section#service {
+    background: url('./assets/img4.png');
+    color: #fff;
+}
+
+section#portfolio {
+    background: url('./assets/img5.png');
+    color: #fff;
+}
+
+section#contact {
+    background: url('./assets/img6.jpg');
+    color: #000;
+}
+
+@media (max-width: 1100px) {
+    nav ul li a {
+        margin: 0 20px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li a {
+        margin: 0 20px;
+        margin: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul li a {
+        margin: 0 10px;
+        margin: 3px 5px;
+        font-size: 12px;
+    }
+}
+
